@@ -12,7 +12,7 @@
 
 <?php else : 
 
-    require_once('create_xml.php');
+    require_once('Create_xml.php');
     $init = new Create_xml($_FILES['inputFile']);
 
 endif; ?>
