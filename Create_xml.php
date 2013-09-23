@@ -48,7 +48,7 @@ class Create_xml extends XmlWriter
      * @return null
      */
     public function readCSV() {
-        $this->inputFile = new SplFileObject($this->filename["basename"]);
+        $this->inputFile = new SplFileObject($this->inputFile["tmp_name"] . $this->filename["basename"]);
         // Read lines as CSV rows
         $this->inputFile->setFlags(SplFileObject::READ_CSV);
         // Set the delimiter and enclosure character for CSV
