@@ -12,7 +12,6 @@
 
 <?php else : 
 
-/* echo '<pre>'; var_dump($_FILES); echo '</pre>'; die(); */
     require_once('Create_xml.php');
     $init = new Create_xml($_FILES['inputFile']);
 
